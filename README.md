@@ -4,7 +4,7 @@
 
 Based on the Roots starter theme. [Roots](http://roots.io/) is a WordPress starter theme based on [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/) that will help you make better themes.
 
-* Source: [https://github.com/leoken/passione-pizza/](https://github.com/leoken/passione-pizza/)
+* Source: [https://github.com/maintainweb/passione-pizza/](https://github.com/maintainweb/passione-pizza/)
 * Home Page: [http://passionepizza.com/](http://passionepizza.com/)
 * Twitter: [@passione_pizza](https://twitter.com/passione_pizza)
 
