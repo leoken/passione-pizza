@@ -8,10 +8,12 @@ Based on the Roots starter theme. [Roots](http://roots.io/) is a WordPress start
 * Home Page: [http://passionepizza.com/](http://passionepizza.com/)
 * Twitter: [@passione_pizza](https://twitter.com/passione_pizza)
 
+
 Development
 * Author: [http://eriksportfolio.com/](http://eriksportfolio.com/)
 * Home Page: [http://maintainweb.co/](http://maintainweb.co/)
 * Twitter: [@maintainweb](https://twitter.com/maintainweb)
+
 
 * Source: [https://github.com/roots/roots](https://github.com/roots/roots)
 * Home Page: [http://roots.io/](http://roots.io/)
