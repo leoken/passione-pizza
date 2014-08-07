@@ -1,0 +1,81 @@
+@navbar-custom-color:             #777;
+@navbar-custom-bg:                #FFF;
+@navbar-custom-border:            darken(@navbar-custom-bg, 6.5%);
+@navbar-height:                   90px;
+
+.banner {
+  text-transform: uppercase;
+   &.navbar-custom {
+      border: 0;
+      font-weight: 700;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      background-color: rgba(255,255,255,0.0)!important;
+      .transition(0.5s 0 all ease);
+      &.affix-top {
+        background-color: rgba(255,255,255,0.0)!important;
+        .transition(0.5s 0 all ease);
+        .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+          color: #fff;
+          background-color: transparent;
+          .transition(0.5s 0 all ease);
+        }
+        .navbar-nav > li > a {
+          color: #fff;
+          background-color: transparent;
+          .transition(0.5s 0 all ease);
+        }
+      }
+      &.affix {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        background-color: rgba(255,255,255,0.90)!important;
+        .transition(0.5s 0 all ease);
+      }
+   }
+   .navbar-brand{
+      @brand-height: (@navbar-height - 30px);
+      @brand-width: (@navbar-height * 2.2);
+      .size(@brand-width; @brand-height);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      .text-hide();
+      .center-block();
+      @calc-margin: (@navbar-height - @brand-height);
+      @margin-top: (@calc-margin * 0.25);
+      margin-top: round(@margin-top);
+      margin-right: 40px;
+      background-color: transparent;
+   }
+   .navbar-left {
+      width: 50%;
+   }
+   .navbar-right {
+      width: 25%;
+      div {
+        display: inline-block;
+        padding-top: (@navbar-padding-vertical - (@font-size-base * 0.5));
+      }
+   }
+}
+
+
+body.logged-in.admin-bar {
+  .banner {
+    margin-top: 32px!important;
+  }
+}
+
+.wrap.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: -(@navbar-height * 2);
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
