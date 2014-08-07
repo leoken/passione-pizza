@@ -58,7 +58,11 @@ function roots_display_sidebar() {
      */
     array(
       'is_404',
-      'is_front_page'
+      'is_front_page',
+      'is_single',
+      'is_page',
+      'is_archive',
+      'is_category'
     ),
     /**
      * Page template checks (via is_page_template())
@@ -67,7 +71,8 @@ function roots_display_sidebar() {
     array(
       'template-custom.php',
       'template-fullwidth.php',
-      'template-singlepagelayout.php'
+      'template-singlepagelayout.php',
+      'template-home.php'
     )
   );
 
