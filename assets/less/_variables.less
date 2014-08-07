@@ -1,74 +1,67 @@
+@font-face {
+font-family: 'Verlag-Light';
+src:  url('../fonts/Verlag-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Verlag-Light.woff') format('woff'),
+      url('../fonts/Verlag-Light.ttf') format('truetype'),
+      url('../fonts/Verlag-Light.svg#Verlag-Light') format('svg');
+}
+
+@font-face {
+font-family: 'Verlag-Book';
+src:  url('../fonts/Verlag-Book.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Verlag-Book.woff') format('woff'),
+      url('../fonts/Verlag-Book.ttf') format('truetype'),
+      url('../fonts/Verlag-Book.svg#Verlag-Book') format('svg');
+}
+
+@font-face {
+font-family: 'Verlag-Bold';
+src:  url('../fonts/Verlag-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Verlag-Bold.woff') format('woff'),
+      url('../fonts/Verlag-Bold.ttf') format('truetype'),
+      url('../fonts/Verlag-Bold.svg#Verlag-Bold') format('svg');
+font-weight: bold;
+}
+
 // Brand colors
 // -------------------------
 
-@brand-primary:         #291684;
+@brand-primary:         #009F4A;
 
 @border-radius-base:        0;
 @border-radius-large:       0;
 @border-radius-small:       0;
 
-// Glyphicons path
-// -------------------------
-
-@icon-font-path:        "../vendor/bootstrap/fonts/";
+@font-family-sans-serif:  "Verlag-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+@navbar-custom-color:             #777;
+@navbar-custom-bg:                #FFF;
+@navbar-custom-border:            darken(@navbar-custom-bg, 6.5%);
+@navbar-height:                   90px;
 
-@font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@navbar-default-color:             #777;
+@navbar-default-bg:                #f8f8f8;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+// Navbar links
+@navbar-default-link-color:                #777;
+@navbar-default-link-hover-color:          #333;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #555;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
 
-/* Color Mixins */
-@complement1: spin(@base, 180);
-@complement2: darken(spin(@base, 180), 5%);
-@lighten1: lighten(@base, 15%);
-@lighten2: lighten(@base, 30%);
-@lighter1: lighten(spin(@base, 5), 10%);
-@lighter2: lighten(spin(@base, 10), 20%);
-@darker1: darken(spin(@base, -5), 10%);
-@darker2: darken(spin(@base, -10), 20%);
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
 
-/* Primary Color Mixin */
-@base: #291684;
-@primary-color: @base;
-.primary-background-base   {background-color: @base;}
-.primary-background-complement1   {background-color: @complement1;}
-.primary-background-complement2 {background-color: @complement2;}
-.primary-background-lighten1  {background-color: @lighten1;}
-.primary-background-lighten2  {background-color: @lighten2;}
-.primary-background-lighter1   {background-color: @lighter1;}
-.primary-background-lighter2 {background-color: @lighter2;}
-.primary-background-darker1  {background-color: @darker1;}
-.primary-background-darker2  {background-color: @darker2;}
-.primary-color-base   {color: @base;}
-.primary-color-complement1   {color: @complement1;}
-.primary-color-complement2 {color: @complement2;}
-.primary-color-lighten1  {color: @lighten1;}
-.primary-color-lighten2  {color: @lighten2;}
-.primary-color-lighter1   {color: @lighter1;}
-.primary-color-lighter2 {color: @lighter2;}
-.primary-color-darker1  {color: @darker1;}
-.primary-color-darker2  {color: @darker2;}
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-icon-bar-bg:        #888;
+@navbar-default-toggle-border-color:       #ddd;
 
-
-/* Secondary Color Mixin */
-@base: #D96020;
-@secondary-color: @base;
-.secondary-background-base   {background-color: @base;}
-.secondary-background-complement1   {background-color: @complement1;}
-.secondary-background-complement2 {background-color: @complement2;}
-.secondary-background-lighten1  {background-color: @lighten1;}
-.secondary-background-lighten2  {background-color: @lighten2;}
-.secondary-background-lighter1   {background-color: @lighter1;}
-.secondary-background-lighter2 {background-color: @lighter2;}
-.secondary-background-darker1  {background-color: @darker1;}
-.secondary-background-darker2  {background-color: @darker2;}
-.secondary-color-base   {color: @base;}
-.secondary-color-complement1   {color: @complement1;}
-.secondary-color-complement2 {color: @complement2;}
-.secondary-color-lighten1  {color: @lighten1;}
-.secondary-color-lighten2  {color: @lighten2;}
-.secondary-color-lighter1   {color: @lighter1;}
-.secondary-color-lighter2 {color: @lighter2;}
-.secondary-color-darker1  {color: @darker1;}
-.secondary-color-darker2  {color: @darker2;}
+//=== Shared nav styles
+@nav-link-padding:                          10px 10px;
+@nav-link-hover-bg:                         @gray-lighter;
