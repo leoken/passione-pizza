@@ -31,7 +31,7 @@ var Roots = {
         autoPlayDelay: 4000
       };
       var sequence = $("#sequence").sequence(options).data("sequence");
-      */
+
 
       $.stellar({
         horizontalOffset: 0,
@@ -40,6 +40,7 @@ var Roots = {
         scrollProperty: 'scroll',
         positionProperty: 'position'
       });
+      */
 
       // Bootstrap Affix
       $('.navbar-custom').affix({
@@ -48,12 +49,13 @@ var Roots = {
         }
       });
 
+      /*
       $('.carousel').carousel({
         interval: 4000,
         wrap: true,
         pause: false
       });
-
+      */
       /* Taken out because of effect it has on bootstrap carousel
       // Smooth Scroll
       $('a[href*=#]:not([href=#])').click(function() {
@@ -70,7 +72,7 @@ var Roots = {
           }
       });
       */
-
+      /*
       $(function () {
         if ($(window).width() > 767) {
           skrollr.init();
@@ -84,6 +86,7 @@ var Roots = {
           }
         });
       });
+      */
 
     }
   },

@@ -14,6 +14,7 @@ if( $post_objects ): ?>
             <a href="<?php the_permalink(); ?>"><?php get_template_part('templates/content', 'featured-image'); ?></a>
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <?php the_excerpt(); ?>
+            <a class="btn btn-primary" href="<?php the_permalink(); ?>">View <?php the_title(); ?> <i class="fa fa-chevron-right"></i></a>
         </div>
     <?php endforeach; ?>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
